@@ -17,7 +17,7 @@ var searchYouTube = (options, callback) => {
       callback(data.items);
     },
     url: 'https://www.googleapis.com/youtube/v3/search'
-  })
+  });
 };
 
 export default searchYouTube;
