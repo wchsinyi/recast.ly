@@ -3,8 +3,8 @@ import VideoListEntry from './VideoListEntry.js';
 
 var VideoList = () => (
   <div className="video-list">
-    {exampleVideoData.map(v => (
-      <VideoListEntry v={v} />
+    {exampleVideoData.map(video => (
+      <VideoListEntry v={video} />
     ))}
   </div>
   // <div className="video-list">
