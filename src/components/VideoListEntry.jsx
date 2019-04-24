@@ -1,4 +1,4 @@
-var VideoListEntry = ({onClick, video}) => (
+var VideoListEntry = ({ onClick, video }) => (
   <div className="video-list-entry media">
     <div className="media-left media-middle">
       <img className="media-object" src={video.snippet.thumbnails.default.url} alt="" />
@@ -15,7 +15,6 @@ var VideoListEntry = ({onClick, video}) => (
 VideoListEntry.propTypes = {
   video: React.PropTypes.object.isRequired
 };
-{/* <VideoListEntry vtitle={video.snippet.title} vdescript={video.snippet.description} vthumb = {video.snippet.thumbnails.default.url}/> */}
 
 // In the ES6 spec, files are "modules" and do not share a top-level scope
 // `var` declarations will only exist globally where explicitly defined

@@ -1,9 +1,9 @@
 import VideoListEntry from './VideoListEntry.js';
 
-var VideoList = ({videos, onClick}) => (
+var VideoList = ({ videos, onClick }) => (
   <div className="video-list">
     {videos.map(video => (
-      <VideoListEntry video={video} onClick={onClick}/> 
+      <VideoListEntry video={video} onClick={onClick} />
     ))}
   </div>
 
@@ -15,7 +15,7 @@ VideoList.propTypes = {
   videos: React.PropTypes.array.isRequired
 };
 
-{/* <VideoListEntry vtitle={video.snippet.title} vdescript={video.snippet.description} vthumb = {video.snippet.thumbnails.default.url}/> */}
+{/* <VideoListEntry vtitle={video.snippet.title} vdescript={video.snippet.description} vthumb = {video.snippet.thumbnails.default.url}/> */ }
 
 //      <VideoListEntry vtitle={video.snippet.title} vdescript={video.snippet.description} vthumb = {video.snippet.thumbnails.default.url}/>
 // In the ES6 spec, files are "modules" and do not share a top-level scope.
