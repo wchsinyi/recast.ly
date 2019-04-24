@@ -1,7 +1,12 @@
-var Search = ({ onSubmit, searchStr, onKeyPress }) => (
+var Search = ({ searchStr, onKeyPress, makeSearchRequest }) => (
   <div className="search-bar form-inline">
-    <input className="form-control" type="text" onKeyPress={(e) => onKeyPress(e)} />
-    <button className="btn hidden-sm-down" >
+    <input className="form-control" type="text" onChange={(e) => {
+      console.log(e.target.value);
+      onKeyPress(e.target.value);
+      makeSearchRequest(e.target.value);
+    }}
+    />
+    <button className="btn hidden-sm-down" onClick={() => { console.log(searchStr); makeSearchRequest(searchStr); }} >
       <span className="glyphicon glyphicon-search" ></span>
     </button>
   </div >
