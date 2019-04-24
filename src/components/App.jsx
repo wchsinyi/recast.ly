@@ -25,7 +25,6 @@ class App extends React.Component {
   }
 
   handleSearchInput(inputStr) {
-    console.log('inputStr', inputStr);
     this.setState({
       searchStr: inputStr,
     });
@@ -33,13 +32,11 @@ class App extends React.Component {
   }
 
   makeSearchRequest(inputStr) {
-    console.log('MakeSearchRequest of ', inputStr)
     this.props.searchYouTube({
       key: YOUTUBE_API_KEY,
       query: inputStr,
       max: 5
     }, (videoList) => {
-      console.log('INIT');
       this.setState({
         currentVideo: videoList[0],
         videos: videoList
@@ -71,7 +68,6 @@ class App extends React.Component {
       query: 'dogs',
       max: 5
     }, (videoList) => {
-      console.log('INIT');
       this.setState({
         currentVideo: videoList[0],
         videos: videoList

@@ -21,11 +21,3 @@ var searchYouTube = (options, callback) => {
 };
 
 export default searchYouTube;
-//     success: function (data) {
-//   callback(data.items);
-// },
-
-// // .done(function (data) {
-//   alert("success");
-//   callback(data.items);
-// })
