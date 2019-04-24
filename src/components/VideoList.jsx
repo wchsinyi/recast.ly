@@ -2,8 +2,8 @@ import VideoListEntry from './VideoListEntry.js';
 
 var VideoList = ({ videos, onClick }) => (
   <div className="video-list">
-    {videos.map(video => (
-      <VideoListEntry video={video} onClick={onClick} />
+    {videos.map((video, index) => (
+      <VideoListEntry video={video} onClick={onClick} key={index} />
     ))}
   </div>
 
